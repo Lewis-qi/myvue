@@ -1,0 +1,134 @@
+@import '_mixin.scss';
+.container {
+  @include blockCenter;
+  width: 90%;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pos-f {
+  position: fixed;
+}
+
+.pos-a {
+  position: absolute;
+}
+
+.pos-r {
+  position: relative;
+}
+
+@include media(xs) {
+  .container {
+    width: 100%;
+    @include blockCenter;
+    .main {
+      width: 100%;
+    }
+    .right-bar {
+      display: none;
+    }
+  }
+  .header {
+    // padding: 11px 10px;
+    .nav {
+      float: left;
+    }
+  }
+}
+
+@include media(sm) {
+  //   .container {
+  //     width: 100%;
+  //     @include blockCenter;
+  //     .main {
+  //       width: 100%;
+  //     }
+  //     .right-bar {
+  //       display: none;
+  //     }
+  //   }
+  //   .header {
+  //     padding: 11px 10px;
+  //     .nav {
+  //         float: left;
+  //     }
+  //   }
+}
+
+@include media(md) {
+    .container {
+      width: 100%;
+      @include blockCenter;
+      .main {
+        width: 100%;
+      }
+      .right-bar {
+        display: none;
+      }
+    }
+     .header {
+      // padding: 11px 10px;
+      .nav {
+          float: right;
+      }
+    }
+}
+
+@include media(lg) {
+  .container {
+    width: 90%;
+    @include blockCenter;
+    .main {
+      width: 72%;
+    }
+    .right-bar {
+        display: block;
+      }
+    .header {
+      // padding: 11px 10px;
+      .nav {
+        float: right;
+      }
+    }
+  }
+}
+
+@include media(superbig) {
+// .container {
+//     width: 80%;
+//     @include blockCenter;
+//     .main {
+//       width: 72%;
+//     }
+//     .right-bar {
+//         display: block;
+//       }
+//     .header {
+//       padding: 11px 10px;
+//       .nav {
+//         float: right;
+//       }
+//     }
+//   }
+}
+
+ol,
+ul {
+	list-style: none;
+  margin-bottom: 0;
+}
+
+// a {
+//   text-decoration: none;
+// }
